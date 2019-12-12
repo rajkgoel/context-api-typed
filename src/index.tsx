@@ -1,8 +1,18 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
+import AppState from './AppState';
 import * as serviceWorker from './serviceWorker';
+import ContextReader from './ContextReader';
+import ContextEditor from './ContextEditor';
+
+function App() {
+    return (
+      <AppState>
+        <ContextReader />
+        <ContextEditor />
+      </AppState>
+    );
+  }
 
 ReactDOM.render(<App />, document.getElementById('root'));
 
