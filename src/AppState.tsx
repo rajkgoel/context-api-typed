@@ -3,10 +3,6 @@ import AppContext from "./AppContext";
 
 export default class AppState extends React.Component {
  
-  constructor(props: any) {
-    super(props);
-  }
-
   updateUsername = (newUsername: string) => {
     this.setState({ username: newUsername, user: {
       firstname: newUsername.split(" ")[0] || "",
