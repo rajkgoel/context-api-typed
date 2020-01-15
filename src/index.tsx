@@ -4,12 +4,14 @@ import AppState from './AppState';
 import * as serviceWorker from './serviceWorker';
 import ContextReader from './ContextReader';
 import ContextEditor from './ContextEditor';
+import ContextReaderLifeCycle from './ContextReaderLifeCycle';
 
 function App() {
     return (
       <AppState>
         <ContextReader />
         <ContextEditor />
+        <ContextReaderLifeCycle/>
       </AppState>
     );
   }

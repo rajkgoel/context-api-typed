@@ -8,7 +8,7 @@ export default class ContextReader extends Component {
       <AppContextConsumer>
         {({user}) => {
           return (
-            (user && user.firstname && user.lastname)?
+            (user && user.firstname)?
             <h1>
               Welcome Mr. {user.firstname}, <i>{user.lastname}</i> in 'Context API' Sample!
             </h1> 
